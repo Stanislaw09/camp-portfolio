@@ -1,69 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
+body{
+    background-image: url('background.png');
+}
+
+/* NAV */
+
 nav{
-    display: flex;
-    float: right;
-    width: 100vw;
-    min-height: 8vh;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: #5d4954;
-    height: 10vh;
+    height: 50px;
+    background-color: rgb(4, 80, 80);
+    display: inline-flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
 }
 
 nav h4{
-    margin: 18px auto;
+    color: white;
+    margin: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
 }
 
-.burger{
-    margin: 0 14px 0 0;
+nav label{
+    display: none;
 }
 
-.burger:active{
-    animation: toggle 1s ease-in;
+nav input{
+    display: none;
 }
 
-@keyframes toggle {
-    from{
-
-    }
-}
-
-.burger div{
-    background-color: rgb(242, 241, 242);
+nav label div{
+    height: 2px;
     width: 25px;
-    height: 3px;
-    margin: 5px;
-    transition: all 0.3s ease;
+    background-color: whitesmoke;
+    margin: 5px 25px;
+    transition: 0.5s;
 }
 
 nav ul{
-    position: fixed;
-    display: flex;
-    top: 10vh;
-    right: 0;
-    width: 40%;
-    background-color: #5d4954;
+    float: right;
     list-style: none;
-    flex-direction: column;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    position: relative;
+    color: #fcfbfd;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    margin: 0 12px;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+main{
+    padding: 6px;
+    max-width: 1200px;
+}
+
+main section{
+    padding: 20px 0;
+}
+
+main section h3{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 90vh;
+    margin-bottom: 10px;
+}
+
+
+#welcome img{
+    width: 60%;
+    display: flex;
+    height: auto;
+    margin: 20px auto;
+}
+
+#welcome p{
+    line-height: 2em;
+    font-size: 19px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+#technologies div{
+    display: flex;
+    width: 80%;
     justify-content: space-around;
 }
 
-.nav-links li a{
-    text-decoration: none;
-    color: rgb(136, 162, 207);
-    font-size: 18px;
-    margin: auto;
+#technologies div ul{
+    list-style: none;
 }
 
-.nav-inks a:visited{
-    color: rgb(165, 191, 236);
+#technologies div ul li{
+   margin: 16px 0;
+}
+
+#technologies div ul li img{
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   vertical-align: middle;
+}
+
+
+#projects .projects-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#projects .projects-container p{
+   width: 50%;
+   margin: 20px;
+   padding: 4px;
+   font-size: 18px;
+   line-height: 1.6em;
+}
+
+#projects .projects-links{
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+}
+
+#projects .projects-links a{
     text-decoration: none;
+    color: #5a6a96;
+    font-size: 18px;
+    margin: 8px 4px;
+}
+
+
+#contact form{
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact form input{
+    margin: 12px;
+    font-size: 18px;
+    line-height: 1.6em;
+    padding: 4px;
+}
+
+#contact textarea{
+    min-width: 100%;
+    font-size: 18px;
+}
+
+#contact input[type=submit]{
+    width: 94px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    background-color: #33303b;
+}
+
+footer{
+    background-color: #33303b;
+    height: 100px;
+    display: grid;;
+}
+
+
+@media (max-width: 780px){
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        top: 50px;
+        right: -100%;
+        text-align: center;
+        transition: .7s;
+        z-index: 10;
+        background-color: teal;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50% 0;
+    }
+
+    nav label{
+        display: block;
+    }
+
+    #burger:checked ~ ul{
+        right: 0
+    }
+    
+    #burger:checked ~ label #line1{
+        transform: rotate(45deg) translate(4px, -4px);
+        transition: 0.5s;
+    }
+    #burger:checked ~ label #line2{
+        display: none;
+        transition: 0.5s;
+    }
+    #burger:checked ~ label #line3{
+        transform: rotate(-45deg) translate(8px, -2px);
+        transition: 0.5s;
+    }
+
+
+    #projects .projects-container{
+        display: block;
+    }
+    
+    #projects .projects-container p{
+       width: 80%;
+       margin: 20px auto;
+    }
+
+    #contact form{
+        width: 80%;
+    }
 }

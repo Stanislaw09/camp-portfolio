@@ -6,42 +6,146 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <nav>
-            <h4 class="logo">The Nav</h4>
+            <h4 class="logo">Portfolio</h4>
 
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <input type="checkbox" id="burger">
+            <label for="burger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </label>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-
         </nav>
 
         <main>
-            <section id="welcome-section">
+            <section id="welcome">
+                <h3>Welcome to my portfolio</h3>
+
+                <img src="https://tafwa.org/wp-content/uploads/2020/04/adult-blank.jpg" alt="avatar">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolore ad ipsam delectus recusandae. Alias quod accusamus unde voluptatum cupiditate non quisquam veniam ex iusto in, deserunt totam esse ab!
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos accusamus dicta assumenda a nihil modi dignissimos culpa, commodi consequatur id nobis sit vel quaerat inventore, eaque eveniet quia esse eum.
+                </p>
+            </section>
+
+            <section id="technologies">
+                <h3>Technologies I use</h3>
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" alt="react icon">
+                            React
+                        </li>
+
+                        <li>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="react icon">
+                            JavaScript
+                        </li>
+
+                        <li>
+                            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012011/stocklogos-template-01.png?itok=DapYF29D" alt="react icon">
+                            HTML
+                        </li>
+
+                        <li>
+                            <img src="https://juststickers.in/wp-content/uploads/2014/05/CSS3-Mark-Shape-Cut.png" alt="react icon">
+                            CSS
+                        </li>
+
+                        <li>
+                            <img src="https://img.icons8.com/color/452/firebase.png" alt="react icon">
+                            Firebase
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" alt="react icon">
+                            Python
+                        </li>
+
+                        <li>
+                            <img src="https://seeklogo.com/images/C/c-logo-43CE78FF9C-seeklogo.com.png">
+                            C++
+                        </li>
+
+                        <li>
+                            <img src="https://mpng.subpng.com/20180405/doe/kisspng-the-c-programming-language-computer-programming-co-programmer-5ac6bd83099b97.1672069615229740830394.jpg" alt="react icon">
+                            C
+                        </li>
+
+                        <li>
+                            <img src="https://media.glassdoor.com/sqll/243451/the-qt-company-squarelogo-1512137113690.png" alt="react icon">
+                            Qt
+                        </li>
+                    </ul>
+                </div>
 
             </section>
 
-            <section id="technologies-section">
+            <section id="projects">
+                <h3>My projects</h3>
 
+                <div class='projects-container'>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, tempore dolores vitae error totam hic amet quod, blanditiis quas laborum temporibus sequi ipsa sed asperiores id aliquam odio consequuntur impedit?</p>
+
+                    <div class='projects-links'>
+                        <a href='https://stanislaw09.github.io/galleryApp/' target='blank'>Gallery App</a>
+
+                        <a href='https://github.com/Stanislaw09/BookmarksExtension' target='blank'>Bookmarks Extension</a>
+
+                        <a href='https://github.com/Stanislaw09/EulerProject' target='blank'>Euler Project</a>
+
+                        <a href='https://github.com/Stanislaw09/fucking_advice_bot' target='blank'>Instagram Bot</a>
+
+                        <a href='https://github.com/Stanislaw09/tic-tac-toe' target='blank'>Tic-Tac-toe</a>
+                    </div>
+                </div>
             </section>
 
-            <section id="projects-section">
+            <section id="contact">
+                <h3>Contact with me</h3>
 
-            </section>
+                <form action="post">
+                    <input type="email" placeholder='Your mail...'>
+                    <label for="question"></label>
+                    <textarea type="textarea" id='question' rows="6"  placeholder='And question...'></textarea>
 
-            <section id="others-section">
+                    <div>
+                        <input type="radio" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
 
+                    <div>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                    <input id='submit' type="submit">
+                </form>
             </section>
         </main>
+
+        <footer>
+            <h4>sgardzielewski09@gmail.com</h4>
+            <h4>111 222 333</h4>
+            <a href="https://github.com/Stanislaw09">Stanislaw09</a>
+        </footer>
     </body>
 </html>
