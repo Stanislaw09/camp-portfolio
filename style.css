@@ -131,6 +131,7 @@ main section h3{
 
 #technologies div ul li p{
     margin: 0 40px 0 20px;
+    font-weight: 600;
 }
 
 #technologies .white {
@@ -167,8 +168,8 @@ main section h3{
 
 #technologies div ul li img{
    border-radius: 50%;
-   width: 30px;
-   height: 30px;
+   width: 32px;
+   height: 32px;
    vertical-align: middle;
 }
 
@@ -337,6 +338,7 @@ footer a{
         width: 92%;
         font-size: 17px;
         line-height: 1.8em;
+        padding: 0;
     }
 
     #technologies div ul{
@@ -385,6 +387,7 @@ footer a{
         margin-right: 20px;
     }
 }
+
 
 @keyframes toggle-nav{
     from {
