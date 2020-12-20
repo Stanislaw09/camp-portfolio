@@ -16,6 +16,7 @@ body{
     background-image: url('background.png');
 }
 
+
 /* NAV */
 
 nav{
@@ -68,11 +69,12 @@ nav ul li a{
     position: relative;
     color: #fcfbfd;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.3px;
-    margin: 0 12px;
+    margin: 0 14px;
     text-transform: uppercase;
 }
+
 
 /* MAIN */
 
@@ -89,10 +91,11 @@ main section{
 
 main section h3{
     display: flex;
+    font-size: 22px;
     font-style: italic;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -106,23 +109,60 @@ main section h3{
 #welcome p{
     line-height: 2em;
     font-size: 19px;
-    width: 80%;
     margin: 10px auto;
+    padding: 10px 20px;
 }
 
-
-#technologies div{
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
-}
 
 #technologies div ul{
     list-style: none;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 100px;
+    justify-content: center;
 }
 
 #technologies div ul li{
    margin: 16px 0;
+   display: grid;
+   align-items: center;
+   grid-template-columns: 30px 120px 3fr;
+}
+
+#technologies div ul li p{
+    margin: 0 40px 0 20px;
+}
+
+#technologies .white {
+    background-color: white;
+    height: 20px;
+    justify-content: end;
+    color: white;
+    text-align: center;
+}
+
+#technologies ul li div div{
+    background-color: #33303b;
+    height: 20px;
+}
+
+.gray40 {
+   width: 40%;
+}
+.gray50 {
+   width: 50%;
+}
+.gray60 {
+   width: 60%;
+}
+.gray70 {
+   width: 70%;
+}
+.gray80 {
+   width: 80%;
+}
+.gray90 {
+   width: 90%;
 }
 
 #technologies div ul li img{
@@ -172,17 +212,24 @@ main section h3{
     margin: 0 auto;
 }
 
+#contact form h4{
+    margin-top: 16px;
+}
+
 #contact form input{
     margin: 12px 0;
     font-size: 18px;
     line-height: 1.6em;
     padding: 4px;
+    border: none;
 }
 
 #contact textarea{
     min-width: 100%;
+    margin: 12px 0;
     font-size: 18px;
     padding: 4px;
+    border: none;
 }
 
 #contact input[type=submit]{
@@ -194,6 +241,7 @@ main section h3{
     border-radius: 4px;
     background-color: #33303b;
 }
+
 
 /* FOOTER  */
 
@@ -226,6 +274,7 @@ footer a{
     color: #5a6a96;
 }
 
+
 /* MOBILE  */
 
 @media (max-width: 780px){
@@ -257,8 +306,17 @@ footer a{
         display: block;
     }
 
+
     #burger:checked ~ ul{
         right: 0;
+        animation-name: toggle-nav;
+        animation-duration: 1.6s;
+    }
+
+    #burger:checked ~ ul li{
+        right: 0;
+        animation-name: toggle-nav;
+        animation-duration: 1.5s;
     }
     
     #burger:checked ~ label #line1{
@@ -280,6 +338,11 @@ footer a{
         font-size: 17px;
         line-height: 1.8em;
     }
+
+    #technologies div ul{
+        grid-template-columns: 90%;
+    }
+
 
     .projects-container{
         display: block;
@@ -320,5 +383,14 @@ footer a{
     footer div img{
         width: 30px;
         margin-right: 20px;
+    }
+}
+
+@keyframes toggle-nav{
+    from {
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1;
     }
 }
