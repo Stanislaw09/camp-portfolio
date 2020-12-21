@@ -32,7 +32,7 @@ Portfolio includes such concepts like:
 
 - responsive grids to present known technologies and projects:
 
-  ![grid](./image/\screen2.png)
+  ![grid](./images/screen2.png)
 
 ![grid](./images/screen3.png)
 
