@@ -26,19 +26,19 @@ Portfolio includes such concepts like:
 
 - flexboxes implemented as the responsive navbar:
 
-![navbar](C:\Users\Stanislaw\Documents\Websites\camp-portfolio\images\screen1.png)
+![navbar](images\screen1.png)
 
-![navbar](C:\Users\Stanislaw\Documents\Websites\camp-portfolio\images\screen5.png)
+![navbar](images\screen5.png)
 
 - responsive grids to present known technologies and projects:
 
-  ![grid](C:\Users\Stanislaw\Documents\Websites\camp-portfolio\images\screen2.png)
+  ![grid](images\screen2.png)
 
-![grid](C:\Users\Stanislaw\Documents\Websites\camp-portfolio\images\screen3.png)
+![grid](images\screen3.png)
 
 * key frames included in mobile navbar transition
 
-* media query to provide responsive view regardless of screen view![responsive](C:\Users\Stanislaw\Documents\Websites\camp-portfolio\images\screen4.png)
+* media query to provide responsive view regardless of screen view![responsive](images\screen4.png)
 
   ---
 
