@@ -2,7 +2,7 @@
 
 ---
 
-Simple business card / portfolio created of web developer in the form of static web page created with plain HTML and CSS
+Simple business card / portfolio created with the plain HTML and CSS for the web developer in the form of static web page
 
 Preview:
 https://stanislaw09.github.io/camp-portfolio/
@@ -26,22 +26,24 @@ Portfolio includes such concepts like:
 
 - flexboxes implemented as the responsive navbar:
 
-![navbar](.\images\screen1.png)
+![navbar](./images/screen1.png)
 
-![navbar](.\images\screen5.png)
+![navbar](./images/screen5.png)
 
 - responsive grids to present known technologies and projects:
 
-  ![grid](.\images\screen2.png)
+![grid](./images/screen2.png)
 
-![grid](.\images\screen3.png)
+![grid](./images/screen3.png)
 
 * key frames included in mobile navbar transition
 
-* media query to provide responsive view regardless of screen view![responsive](.\images\screen4.png)
+* media query to provide responsive view regardless of screen view:
 
-  ---
+![responsive](./images/screen4.png)
 
+
+---
   
 
 ### Technologies
