@@ -26,19 +26,19 @@ Portfolio includes such concepts like:
 
 - flexboxes implemented as the responsive navbar:
 
-![navbar](images\screen1.png)
+![navbar](.\images\screen1.png)
 
-![navbar](images\screen5.png)
+![navbar](.\images\screen5.png)
 
 - responsive grids to present known technologies and projects:
 
-  ![grid](images\screen2.png)
+  ![grid](.\images\screen2.png)
 
-![grid](images\screen3.png)
+![grid](.\images\screen3.png)
 
 * key frames included in mobile navbar transition
 
-* media query to provide responsive view regardless of screen view![responsive](images\screen4.png)
+* media query to provide responsive view regardless of screen view![responsive](.\images\screen4.png)
 
   ---
 
