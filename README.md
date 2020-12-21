@@ -5,7 +5,7 @@
 Simple business card / portfolio created of web developer in the form of static web page created with plain HTML and CSS
 
 Preview:
-
+https://stanislaw09.github.io/camp-portfolio/
 
 
 ---
